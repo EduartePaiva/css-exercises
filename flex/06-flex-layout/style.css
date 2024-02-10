@@ -7,19 +7,20 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  gap: 16px;
 
 }
 
 a {
   text-decoration: none;
-  color: rgb(86, 85, 85);
+  color: #666;
 }
 
 img {
@@ -42,10 +43,15 @@ input {
   margin-bottom: 16px;
 }
 
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
   padding: 12px;
+}
+
+.footer {
+  background-color: #eeeeee;
 }
 
 .left-links,
@@ -55,26 +61,10 @@ input {
 }
 
 .content {
+  flex: 1;
   display: flex;
-  justify-content: center;
-}
-
-.content .items {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 4px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 6px;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  background-color: #eeeeee;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
